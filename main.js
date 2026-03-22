@@ -83,10 +83,10 @@
             this.observer = new FrameObserver({ frameName: "mainFrame", onProcess: e => this.processFrame(e) })
         }
         getWaitingButtonsHTML() {
-            let e = '<ul style="margin:0; padding:0;">', t = 0, o = 0, n = this.batchPattern[t] || 3;
+            let e = '<ul style="margin:30px 0 0 0; padding:0;">', t = 0, o = 0, n = this.batchPattern[t] || 3;
             this.waitingNames.forEach(((s, r) => {
                 0 === o && (e += '<li style="display:block; margin:4px 0;">'),
-                e += `\n <span class="nBtn line jwaiting" style="cursor:pointer; display:inline-block; padding:2px 8px; border:1px solid #ccc; border-radius:3px; margin-right:4px;">${s}</span>`,
+                e += `\n <span class="nBtn line jwaiting" style="cursor:pointer; display:inline-block; padding:2px 8px !important; border:1px solid #ccc; border-radius:3px; margin-right:4px;">${s}</span>`,
                 o++, (o >= n || r === this.waitingNames.length - 1) && (e += "</li>", o = 0, t < this.batchPattern.length - 1 && (t++, n = this.batchPattern[t]))
             }));
             return e += "</ul>", e
