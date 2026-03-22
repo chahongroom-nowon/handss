@@ -78,7 +78,7 @@
 
     const StaffButtons = new class {
         constructor() {
-            this.waitingNames = ["재희W", "광숙W", "지후W", "가은W", "정현W", "소연W", "지은W", "희진W", "소이W", "예나W", "주아W", "동섭W"],
+            this.waitingNames = ["재희W", "광숙W", "지후W", "가은W", "정현W", "소연W", "지은W", "희진W", "소이W", "예나W", "주아W", "나연W"],
             this.batchPattern = [4, 3, 2, 2, 1],
             this.observer = new FrameObserver({ frameName: "mainFrame", onProcess: e => this.processFrame(e) })
         }
