@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Handsos Modification",
   "version": "1.0.0",
+  "update_url": "https://chahongroom-nowon.github.io/handss/update.xml",
   "description": "Handsos 웹 확장 프로그램",
   "permissions": [
     "activeTab",
